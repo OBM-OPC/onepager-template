@@ -153,7 +153,17 @@ ul {
 .hero {
     padding: calc(70px + var(--space-3xl)) 0 var(--space-3xl);
     background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg) 100%);
-    text-align: center;
+}
+
+.hero__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.hero__content {
+    text-align: left;
 }
 
 .hero__title {
@@ -168,9 +178,41 @@ ul {
     font-size: clamp(1.125rem, 2vw, 1.5rem);
     color: var(--color-text-light);
     margin-bottom: var(--space-xl);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 500px;
+}
+
+.hero__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Placeholder Image */
+.placeholder-image {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+    border: 2px dashed #9ca3af;
+    border-radius: var(--radius-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl);
+    text-align: center;
+}
+
+.placeholder-image__text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: var(--space-sm);
+}
+
+.placeholder-image__hint {
+    font-size: 0.875rem;
+    color: #9ca3af;
 }
 
 /* ========================================
@@ -458,6 +500,28 @@ ul {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
+    }
+    
+    .hero__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+    
+    .hero__content {
+        text-align: center;
+    }
+    
+    .hero__subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero__image {
+        order: -1;
+    }
+    
+    .placeholder-image {
+        max-width: 400px;
     }
     
     .contact__grid {
