@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Firmenname] | Ihr Partner für [Branche]</title>
+    <meta name="description" content="[Hier steht eine kurze Beschreibung des Unternehmens...]">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">[LOGO]</a>
+                <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav__menu" id="navMenu">
+                    <li><a href="#home" class="nav__link">Start</a></li>
+                    <li><a href="#about" class="nav__link">Über uns</a></li>
+                    <li><a href="#services" class="nav__link">Leistungen</a></li>
+                    <li><a href="#contact" class="nav__link nav__link--cta">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">[Hier steht Ihre Hauptüberschrift]</h1>
+                <p class="hero__subtitle">[Hier steht eine kurze Subline, die Ihr Angebot beschreibt...]</p>
+                <a href="#contact" class="btn btn--primary">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section--light" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section__title">Über uns</h2>
+                <div class="section__line"></div>
+            </div>
+            <div class="about__content">
+                <p class="about__text">[Hier steht eine kurze Beschreibung des Unternehmens. Beschreiben Sie hier, wer Sie sind und was Sie auszeichnet...]</p>
+                <p class="about__text">[Optional: Werdegang / Erfahrung. Ziel ist es, Vertrauen beim Besucher aufzubauen...]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section--white" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section__title">Unsere Leistungen</h2>
+                <div class="section__line"></div>
+            </div>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">[1]</div>
+                    <h3 class="service-card__title">[Leistung 1]</h3>
+                    <p class="service-card__text">[Beschreiben Sie hier Ihre erste Leistung...]</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">[2]</div>
+                    <h3 class="service-card__title">[Leistung 2]</h3>
+                    <p class="service-card__text">[Beschreiben Sie hier Ihre zweite Leistung...]</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">[3]</div>
+                    <h3 class="service-card__title">[Leistung 3]</h3>
+                    <p class="service-card__text">[Beschreiben Sie hier Ihre dritte Leistung...]</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">[4]</div>
+                    <h3 class="service-card__title">[Leistung 4]</h3>
+                    <p class="service-card__text">[Beschreiben Sie hier Ihre vierte Leistung...]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section--dark" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section__title">Kontakt</h2>
+                <div class="section__line"></div>
+            </div>
+            <div class="contact__grid">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Nehmen Sie jetzt Kontakt auf</h3>
+                    <p class="contact__text">[Hier können Sie Ihre Kontaktdaten eintragen...]</p>
+                    <ul class="contact__list">
+                        <li>📍 [Adresse]</li>
+                        <li>📞 [Telefonnummer]</li>
+                        <li>✉️ [E-Mail-Adresse]</li>
+                    </ul>
+                </div>
+                <div class="contact__form-wrapper">
+                    <form class="contact__form" name="contact" method="POST" data-netlify="true">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Name *</label>
+                            <input type="text" id="name" name="name" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">E-Mail *</label>
+                            <input type="email" id="email" name="email" class="form__input" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Nachricht *</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+                        </div>
+                        <div class="form__group form__group--checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" class="form__checkbox" required>
+                            <label for="privacy" class="form__label--checkbox">
+                                Ich habe die <a href="#">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Nachricht senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">© [Jahr] [Firmenname]. Alle Rechte vorbehalten.</p>
+                <nav class="footer__nav">
+                    <a href="impressum.html" class="footer__link">Impressum</a>
+                    <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
