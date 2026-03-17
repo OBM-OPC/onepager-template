@@ -1,0 +1,78 @@
+/* ========================================
+   THEME: POWER RED
+   Stark & Direkt
+   ======================================== */
+
+:root {
+    --color-primary: #dc2626;
+    --color-primary-dark: #b91c1c;
+    --color-text: #7f1d1d;
+    --color-text-light: #991b1b;
+    --color-bg: #fef2f2;
+    --color-bg-light: #fee2e2;
+    --color-bg-dark: #7f1d1d;
+    --color-border: #fecaca;
+}
+
+body {
+    background: linear-gradient(180deg, #fef2f2 0%, #ffffff 100%);
+}
+
+.header {
+    background: rgba(254, 242, 242, 0.98);
+}
+
+.hero {
+    background: linear-gradient(135deg, #fee2e2 0%, #fef2f2 100%);
+}
+
+.hero__title {
+    color: #7f1d1d;
+}
+
+.service-card {
+    background: white;
+    border-left: 4px solid #dc2626;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.service-card:hover {
+    border-left-width: 6px;
+    padding-left: calc(var(--space-xl) - 2px);
+}
+
+.service-card__icon {
+    background: #dc2626;
+    border-radius: 8px;
+}
+
+.btn--primary {
+    background: #dc2626;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn--primary:hover {
+    background: #b91c1c;
+}
+
+.section__line {
+    background: #dc2626;
+    height: 3px;
+}
+
+.nav__link--cta {
+    background: #dc2626;
+    border-radius: 4px;
+}
+
+.footer {
+    background: #7f1d1d;
+}
+
+.contact__form {
+    border: 2px solid #fee2e2;
+}

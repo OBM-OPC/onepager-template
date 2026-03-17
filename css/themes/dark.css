@@ -1,0 +1,85 @@
+/* ========================================
+   THEME: DARK MODE
+   Dunkles Elegant
+   ======================================== */
+
+:root {
+    --color-primary: #60a5fa;
+    --color-primary-dark: #3b82f6;
+    --color-text: #f3f4f6;
+    --color-text-light: #9ca3af;
+    --color-bg: #111827;
+    --color-bg-light: #1f2937;
+    --color-bg-dark: #0f172a;
+    --color-border: #374151;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+.header {
+    background: rgba(17, 24, 39, 0.95);
+    border-color: var(--color-border);
+}
+
+.nav__link {
+    color: var(--color-text);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg) 100%);
+}
+
+.hero__title {
+    color: var(--color-text);
+}
+
+.service-card {
+    background: var(--color-bg-light);
+    border-color: var(--color-border);
+}
+
+.contact__form {
+    background: var(--color-bg-light);
+    color: var(--color-text);
+}
+
+.form__label {
+    color: var(--color-text);
+}
+
+.form__input,
+.form__textarea {
+    background: var(--color-bg);
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.theme-switcher__toggle {
+    background: var(--color-primary);
+}
+
+/* Scrollbar Dark */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4b5563;
+}

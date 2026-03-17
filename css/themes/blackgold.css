@@ -1,0 +1,190 @@
+/* ========================================
+   THEME: BLACK & GOLD
+   Edel & Zeitlos
+   ======================================== */
+
+:root {
+    --color-primary: #d4af37;
+    --color-primary-dark: #b8941f;
+    --color-text: #f5f5f5;
+    --color-text-light: #a3a3a3;
+    --color-bg: #0a0a0a;
+    --color-bg-light: #171717;
+    --color-bg-dark: #000000;
+    --color-border: #262626;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+
+.header {
+    background: rgba(10, 10, 10, 0.98);
+    border-bottom: 1px solid #262626;
+}
+
+.nav__link {
+    color: var(--color-text);
+}
+
+.nav__link:hover {
+    color: #d4af37;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0a0a0a 0%, #171717 100%);
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.hero__title {
+    color: #f5f5f5;
+    text-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
+}
+
+.hero__subtitle {
+    color: #a3a3a3;
+}
+
+.service-card {
+    background: linear-gradient(135deg, #171717 0%, #0a0a0a 100%);
+    border: 1px solid #262626;
+}
+
+.service-card:hover {
+    border-color: #d4af37;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+}
+
+.service-card__icon {
+    background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+    color: #000;
+    font-weight: 700;
+}
+
+.btn--primary {
+    background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+    color: #000;
+    font-weight: 600;
+}
+
+.btn--primary:hover {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+}
+
+.btn--outline-gold {
+    border: 2px solid #d4af37;
+    color: #d4af37;
+}
+
+.btn--outline-gold:hover {
+    background: rgba(212, 175, 55, 0.1);
+}
+
+.section__line {
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    height: 2px;
+}
+
+.nav__link--cta {
+    background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+    color: #000;
+}
+
+.footer {
+    background: #000;
+    border-top: 1px solid #262626;
+}
+
+.contact__form {
+    background: #171717;
+    border: 1px solid #262626;
+    color: #f5f5f5;
+}
+
+.form__label {
+    color: #f5f5f5;
+}
+
+.form__input,
+.form__textarea {
+    background: #0a0a0a;
+    border-color: #262626;
+    color: #f5f5f5;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    border-color: #d4af37;
+}
+
+.section--light {
+    background: #171717;
+}
+
+.section--white {
+    background: #0a0a0a;
+}
+
+.section--dark {
+    background: linear-gradient(135deg, #171717 0%, #0a0a0a 100%);
+}
+
+.contact__subtitle {
+    color: #f5f5f5;
+}
+
+.contact__text {
+    color: #a3a3a3;
+}
+
+.contact__list li {
+    color: #d4d4d4;
+}
+
+.about__text {
+    color: #a3a3a3;
+}
+
+.service-card__text {
+    color: #a3a3a3;
+}
+
+.service-card__title {
+    color: #f5f5f5;
+}
+
+.section__title {
+    color: #f5f5f5;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #262626;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #404040;
+}

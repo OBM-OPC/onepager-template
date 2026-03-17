@@ -1,0 +1,53 @@
+/* ========================================
+   THEME: NATURE GREEN
+   Frisch & Organisch
+   ======================================== */
+
+:root {
+    --color-primary: #10b981;
+    --color-primary-dark: #059669;
+    --color-text: #064e3b;
+    --color-text-light: #065f46;
+    --color-bg: #ecfdf5;
+    --color-bg-light: #d1fae5;
+    --color-bg-dark: #0f172a;
+    --color-border: #a7f3d0;
+}
+
+body {
+    background: linear-gradient(180deg, #ecfdf5 0%, #ffffff 100%);
+}
+
+.hero {
+    background: linear-gradient(135deg, #d1fae5 0%, #ecfdf5 100%);
+}
+
+.hero__title {
+    color: #064e3b;
+}
+
+.service-card {
+    background: white;
+    border: 2px solid #a7f3d0;
+    box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.1);
+}
+
+.service-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.2);
+}
+
+.btn--primary {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.btn--primary:hover {
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
+.section__line {
+    background: linear-gradient(90deg, #10b981, #34d399);
+}
+
+.contact__form {
+    border: 2px solid #a7f3d0;
+}

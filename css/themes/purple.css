@@ -1,0 +1,89 @@
+/* ========================================
+   THEME: PREMIUM PURPLE
+   Luxuriös & Exklusiv
+   ======================================== */
+
+:root {
+    --color-primary: #7c3aed;
+    --color-primary-dark: #6d28d9;
+    --color-text: #2e1065;
+    --color-text-light: #5b21b6;
+    --color-bg: #faf5ff;
+    --color-bg-light: #f3e8ff;
+    --color-bg-dark: #2e1065;
+    --color-border: #e9d5ff;
+}
+
+body {
+    background: linear-gradient(180deg, #faf5ff 0%, #ffffff 30%, #faf5ff 100%);
+}
+
+.hero {
+    background: linear-gradient(135deg, #f3e8ff 0%, #faf5ff 50%, #ffffff 100%);
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(180deg, transparent 0%, rgba(124, 58, 237, 0.05) 100%);
+    pointer-events: none;
+}
+
+.hero__title {
+    color: #4c1d95;
+    background: linear-gradient(135deg, #4c1d95 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #e9d5ff;
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.08);
+}
+
+.service-card:hover {
+    border-color: #c4b5fd;
+    box-shadow: 0 20px 40px rgba(124, 58, 237, 0.15);
+}
+
+.service-card__icon {
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+    box-shadow: 0 8px 25px rgba(124, 58, 237, 0.3);
+}
+
+.btn--primary {
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+}
+
+.btn--primary:hover {
+    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.5);
+}
+
+.section__line {
+    background: linear-gradient(90deg, #7c3aed, #a78bfa, #c4b5fd);
+}
+
+.nav__link--cta {
+    background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+.footer {
+    background: linear-gradient(135deg, #2e1065 0%, #4c1d95 100%);
+}
+
+.section--dark {
+    background: linear-gradient(135deg, #4c1d95 0%, #2e1065 100%);
+}
+
+.contact__form {
+    border: 1px solid #e9d5ff;
+    box-shadow: 0 10px 60px rgba(124, 58, 237, 0.1);
+}
